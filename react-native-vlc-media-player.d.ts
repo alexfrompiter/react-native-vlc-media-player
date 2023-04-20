@@ -1,4 +1,6 @@
 declare module 'react-native-vlc-media-player' {
+  import {StyleProp, ViewStyle} from  'react-native';
+  
   export type TrackInfo = {
     id: number;
     name: string;
@@ -23,23 +25,23 @@ declare module 'react-native-vlc-media-player' {
   export type VLCPlayerProps = {
     source: {uri: string};
     subtitleUri?: string;
-    paused?: bool;
-    repeat?: bool;
+    paused?: boolean;
+    repeat?: boolean;
     rate?: number;
     seek?: number;
     volume?: number;
-    muted?: bool;
+    muted?: boolean;
     audioTrack?: number;
     textTrack?: number;
-    playInBackground?: bool;
+    playInBackground?: boolean;
     videoAspectRatio?: string;
-    autoAspectRatio?: bool;
+    autoAspectRatio?: boolean;
     resizeMode?: string;
-    resume?: bool;
+    resume?: boolean;
     snapshotPath?: string;
-    disableFocus?: bool;
+    disableFocus?: boolean;
     src?: string;
-    playWhenInactive?: bool;
+    playWhenInactive?: boolean;
     poster?: string;
     style?: StyleProp<ViewStyle>;
 
