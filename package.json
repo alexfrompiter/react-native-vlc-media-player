@@ -18,6 +18,7 @@
     "video"
   ],
   "author": "rmilinda@gmail.com",
+  "types": "react-native-vlc-media-player.d.ts",
   "dependencies": {
     "react-native-slider": "^0.11.0",
     "react-native-vector-icons": "^9.2.0"
