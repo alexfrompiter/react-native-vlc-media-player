@@ -369,13 +369,9 @@ class ReactVlcPlayerView extends TextureView implements
                 //mMediaPlayer.setAspectRatio(mVideoWidth+":"+mVideoHeight);
             }
             DisplayMetrics dm = getResources().getDisplayMetrics();
-            Media m = null;
-            if (isNetwork) {
-                Uri uri = Uri.parse(uriString);
-                m = new Media(libvlc, uri);
-            } else {
-                m = new Media(libvlc, uriString);
-            }
+            Uri uri = Uri.parse(uriString);
+            Media m = new Media(libvlc, uri);
+            
             m.setEventListener(mMediaListener);
             if (hwDecoderEnabled != null && hwDecoderForced != null) {
                 boolean hmEnabled = false;
