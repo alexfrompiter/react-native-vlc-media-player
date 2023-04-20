@@ -20,8 +20,6 @@ declare module 'react-native-vlc-media-player' {
     currentTime: number;
   };
 
-  //onLayout?: ((event: LayoutChangeEvent) => void;
-
   export type VLCPlayerProps = {
     source: {uri: string};
     subtitleUri?: string;
